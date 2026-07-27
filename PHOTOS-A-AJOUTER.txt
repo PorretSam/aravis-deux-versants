@@ -1,0 +1,32 @@
+PHOTOS PERSONNALISÉES — À PLACER DANS assets/img/
+
+Les références sont déjà écrites dans le code source.
+
+Images déjà intégrées dans cette archive :
+- sandrine.jpg
+- logo-aravis-parapente.jpg
+
+Images que vous devez encore ajouter :
+- giettaz-hiver.jpg
+- spub.jpg
+- chainedepuisbeauregard.jpg
+
+Emplacement exact :
+assets/img/giettaz-hiver.jpg
+assets/img/spub.jpg
+assets/img/chainedepuisbeauregard.jpg
+
+Le site affiche provisoirement les anciennes illustrations lorsque l'une de
+ces trois photos manque. Dès que vous ajoutez une photo avec le nom exact,
+elle apparaît automatiquement sur la page d'accueil et sur la page concernée.
+
+Ski :
+- Page d'accueil : miniature de la vidéo YouTube.
+- Page Ski : vidéo intégrée directement.
+- Vidéo : https://www.youtube.com/watch?v=eshX_3KoVwg
+
+Attention :
+- respectez exactement les minuscules et les tirets ;
+- utilisez de préférence des images horizontales ;
+- largeur conseillée : 1600 à 2200 pixels ;
+- évitez des fichiers dépassant environ 1,5 Mo.

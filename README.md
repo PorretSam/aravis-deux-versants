@@ -112,3 +112,16 @@ Chaque page utilise :
 - les mêmes couleurs et espacements.
 
 Les contacts, liens, vidéos et formulaires ont été conservés.
+
+
+PHOTOS D'ARRIÈRE-PLAN PERSONNALISÉES
+------------------------------------
+Accueil et pages spécifiques utilisent désormais :
+- giettaz-hiver.jpg
+- sandrine.jpg
+- miniature YouTube eshX_3KoVwg pour le ski
+- spub.jpg
+- logo-aravis-parapente.jpg
+- chainedepuisbeauregard.jpg
+
+Voir PHOTOS-A-AJOUTER.txt.

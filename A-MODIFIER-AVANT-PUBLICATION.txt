@@ -1,0 +1,7 @@
+À MODIFIER AVANT PUBLICATION
+
+1. Votre adresse e-mail dans contact.html : VOTRE-EMAIL@EXEMPLE.FR
+2. Les mentions légales dans mentions-legales.html
+3. Les coordonnées et offres d’Aravis Parapente dans parapente.html
+4. Les noms de domaine dans robots.txt et sitemap.xml si l’adresse GitHub change
+5. Vos photos, si vous souhaitez remplacer les illustrations SVG

@@ -1,0 +1,30 @@
+ARAVIS DEUX VERSANTS — MISE EN LIGNE SUR GITHUB
+
+Cette archive est déjà organisée correctement.
+
+Après décompression, sélectionnez TOUT LE CONTENU de ce dossier :
+- index.html
+- les autres fichiers .html
+- le dossier assets
+- robots.txt
+- sitemap.xml
+- etc.
+
+Puis dans GitHub :
+1. Ouvrez le dépôt aravis-deux-versants.
+2. Add file > Upload files.
+3. Glissez tout le contenu décompressé.
+4. Commit changes.
+5. Settings > Pages.
+6. Source : Deploy from a branch.
+7. Branch : main.
+8. Folder : /(root).
+9. Save.
+
+Adresse prévue :
+https://porretsam.github.io/aravis-deux-versants/
+
+IMPORTANT :
+- Ne téléversez pas le fichier ZIP directement.
+- Ne mettez pas les fichiers dans un sous-dossier supplémentaire.
+- index.html et assets doivent être visibles ensemble à la racine du dépôt.

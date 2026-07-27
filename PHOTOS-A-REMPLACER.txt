@@ -1,0 +1,30 @@
+ARAVIS DEUX VERSANTS — PHOTOS À REMPLACER
+
+La version premium fonctionne immédiatement avec les illustrations actuelles.
+Pour obtenir un rendu vraiment haut de gamme, remplacez ensuite ces fichiers
+dans assets/img/ en conservant exactement les mêmes noms :
+
+1. hero-aravis.svg
+   Grande vue panoramique des Aravis, format horizontal 16:9.
+   Idéal : 2000 x 1200 px minimum.
+
+2. village.svg
+   Photo de La Giettaz ou d'un village des Aravis, format vertical ou carré.
+
+3. ski.svg
+   Photo de ski, piste ou panorama enneigé.
+
+4. parapente.svg
+   Photo de parapente avec reliefs des Aravis.
+
+5. restaurants.svg
+   Photo d'ambiance chaleureuse : table, chalet ou spécialité locale.
+
+Vous pouvez utiliser des fichiers JPG ou WEBP, mais il faudra alors modifier
+les extensions correspondantes dans les pages HTML et dans styles.css.
+
+Conseils :
+- privilégier des photos lumineuses et naturelles ;
+- éviter les images trop compressées ;
+- rester cohérent dans les couleurs ;
+- utiliser vos propres photos ou des images dont vous possédez les droits.

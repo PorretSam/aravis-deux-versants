@@ -1,24 +1,22 @@
-# Aravis Deux Versants — version Soleil & Eau
+ARAVIS DEUX VERSANTS — CODE SOURCE INSPIRÉ DE LA MAQUETTE VALIDÉE
 
-Site statique prêt pour GitHub Pages.
+Contenu :
+- index.html : page d’accueil proche du modèle validé
+- pages secondaires prêtes à personnaliser
+- assets/css/styles.css : design complet
+- assets/js/app.js : menu mobile + lecture vidéo
+- assets/img/ : logo et visuels SVG modifiables
 
-## Mise en ligne
-1. Décompresser le ZIP.
-2. Sélectionner **tout le contenu** du dossier.
-3. Dans GitHub : **Add file > Upload files**.
-4. Remplacer les anciens fichiers et valider avec **Commit changes**.
-5. Vérifier : **Settings > Pages > main > /(root)**.
+Pour modifier le nom du site :
+- ouvrez les fichiers HTML
+- recherchez : ARAVIS DEUX VERSANTS
+- remplacez par le nom souhaité
 
-## Changements rapides
-- Nom du site : chercher `Aravis` et `Deux Versants` dans les fichiers HTML.
-- Couleurs : modifier les variables au début de `assets/css/styles.css`.
-- E-mail : remplacer `VOTRE-EMAIL@EXEMPLE.FR` dans `contact.html`.
-- Restaurants : modifier `assets/js/data.js`.
-- Vidéo hors-piste : chercher `z4XrgOrd42s` dans `ski.html`.
-- Vidéo Rocher de la Ville : chercher `2DdUopC5c8U` dans `la-giettaz.html`.
+Pour remplacer les images :
+- déposez vos photos dans assets/img/
+- remplacez les références SVG dans les HTML ou le CSS
 
-## Logo
-Le symbole est en SVG dans `assets/img/logo-mark.svg` et le texte est écrit dans les pages HTML. Le nom n’est donc plus bloqué dans une image PNG.
-
-## Médias fournis
-Les anciennes propositions et les maquettes sont conservées dans `assets/media-fournis/` et `assets/maquettes-reference/`. Le fichier `aravis couché soleil.png` reçu est entièrement transparent : il ne peut pas être affiché tel quel, mais il est conservé dans l’archive.
+Publication GitHub Pages :
+1. décompressez l’archive
+2. envoyez tout le contenu dans votre dépôt GitHub
+3. activez Settings > Pages > Deploy from a branch > main > /(root)

@@ -1,9 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" role="img" aria-labelledby="t d">
-<title id="t">Symbole Aravis Deux Versants</title><desc id="d">Deux sommets, un soleil et une vague turquoise.</desc>
-<defs><linearGradient id="a" x1="0" x2="1"><stop stop-color="#0785c1"/><stop offset="1" stop-color="#00b9c9"/></linearGradient><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffdb42"/><stop offset="1" stop-color="#ff9d42"/></linearGradient></defs>
-<circle cx="108" cy="31" r="23" fill="url(#b)"/>
-<path d="M10 80 52 29l24 29 24-37 50 59H10Z" fill="#fff" stroke="#075b95" stroke-width="7" stroke-linejoin="round"/>
-<path d="m24 76 28-34 23 27 26-36 36 43" fill="none" stroke="url(#a)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M17 94c20-12 39 12 60 0s39 12 64 0" fill="none" stroke="#00b9c9" stroke-width="8" stroke-linecap="round"/>
-<path d="M29 107c17-8 31 8 48 0s31 8 51 0" fill="none" stroke="#0785c1" stroke-width="5" stroke-linecap="round" opacity=".78"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 130" role="img" aria-label="Logo Aravis Deux Versants">
+<defs>
+  <linearGradient id="sun" x1="0" x2="1"><stop stop-color="#ffcc34"/><stop offset="1" stop-color="#ff8b39"/></linearGradient>
+  <linearGradient id="m1" x1="0" x2="1"><stop stop-color="#0f95d7"/><stop offset="1" stop-color="#35c9c3"/></linearGradient>
+</defs>
+<circle cx="36" cy="22" r="13" fill="url(#sun)"/>
+<g stroke="#f9a81f" stroke-width="3" stroke-linecap="round">
+  <path d="M36 1v8"/><path d="M36 35v8"/><path d="M15 22h8"/><path d="M49 22h8"/>
+  <path d="m21 7 5 5"/><path d="m46 32 5 5"/><path d="m21 37 5-5"/><path d="m46 12 5-5"/>
+</g>
+<path d="M19 45c6-12 15-18 28-18 10 0 18 3 25 11 5-3 10-5 16-5 15 0 28 10 34 26H19Z" fill="#ffffff" opacity=".95"/>
+<path d="M16 47 43 20l17 17 15-20 27 30H16Z" fill="none" stroke="#1d8fc3" stroke-width="6" stroke-linejoin="round"/>
+<path d="M18 64c17-11 31 11 48 0 17-11 31 11 49 0" fill="none" stroke="#29c7c0" stroke-width="8" stroke-linecap="round"/>
 </svg>

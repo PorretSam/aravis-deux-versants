@@ -1,1 +1,22 @@
-(()=>{const b=document.body,m=document.querySelector('[data-menu-toggle]'),n=document.querySelector('[data-main-nav]');if(m&&n){m.addEventListener('click',()=>{const o=b.classList.toggle('menu-open');m.setAttribute('aria-expanded',String(o));m.textContent=o?'Fermer':'Menu'});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{b.classList.remove('menu-open');m.setAttribute('aria-expanded','false');m.textContent='Menu'}))}document.querySelectorAll('[data-year]').forEach(e=>e.textContent=new Date().getFullYear());const ob='IntersectionObserver'in window?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');ob.unobserve(e.target)}}),{threshold:.13}):null;document.querySelectorAll('.reveal').forEach(e=>ob?ob.observe(e):e.classList.add('is-visible'));const g=document.querySelector('[data-restaurant-grid]');if(g&&window.ARAVIS_DATA){const esc=v=>String(v).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#039;');const safe=v=>{try{const u=new URL(v,location.href);return['http:','https:'].includes(u.protocol)?u.href:'#'}catch{return'#'}};const cs=window.ARAVIS_DATA.restaurants.map(i=>{const a=document.createElement('article');a.className='card restaurant-card reveal';a.dataset.zone=i.zone;a.dataset.tags=i.tags.join(' ');a.innerHTML=`<div class="card-top"><div><span class="badge">${esc(i.place)}</span><h3>${esc(i.name)}</h3></div>${i.favorite?'<span class="badge badge-sun">Coup de cœur</span>':''}</div><div class="restaurant-meta"><span class="badge badge-coral">${esc(i.type)}</span>${i.tags.map(t=>`<span class="badge">${esc(t)}</span>`).join('')}</div><p>${esc(i.summary)}</p><p class="muted small"><strong>Bon à savoir :</strong> ${esc(i.note)}</p><div class="card-actions actions"><a class="btn btn-small btn-sun" href="${safe(i.maps)}" target="_blank" rel="noopener">Itinéraire</a><a class="btn btn-small btn-ghost" href="${safe(i.official)}" target="_blank" rel="noopener">Infos</a></div>`;return a});g.replaceChildren(...cs);cs.forEach(c=>ob?ob.observe(c):c.classList.add('is-visible'));document.querySelectorAll('[data-filter]').forEach(bt=>bt.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed','false'));bt.setAttribute('aria-pressed','true');const f=bt.dataset.filter;cs.forEach(c=>c.hidden=!(f==='all'||c.dataset.zone===f||c.dataset.tags.split(' ').includes(f)))}))}const f=document.querySelector('[data-contact-form]');if(f)f.addEventListener('submit',e=>{e.preventDefault();const d=new FormData(f),r=f.dataset.recipient||'VOTRE-EMAIL@EXEMPLE.FR',s=encodeURIComponent(`Aravis Deux Versants — ${d.get('subject')||'Message'}`),t=[`Nom : ${d.get('name')||''}`,`E-mail : ${d.get('email')||''}`,`Téléphone : ${d.get('phone')||''}`,'',d.get('message')||''].join('\n');location.href=`mailto:${r}?subject=${s}&body=${encodeURIComponent(t)}`})})();
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('[data-menu-toggle]');
+  const body = document.body;
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      body.classList.toggle('menu-open');
+      toggle.setAttribute('aria-expanded', body.classList.contains('menu-open') ? 'true' : 'false');
+      toggle.textContent = body.classList.contains('menu-open') ? 'Fermer' : 'Menu';
+    });
+  }
+  document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
+
+  const video = document.querySelector('[data-video-embed]');
+  const poster = document.querySelector('[data-video-poster]');
+  if (video && poster) {
+    poster.addEventListener('click', () => {
+      video.removeAttribute('hidden');
+      poster.setAttribute('hidden', 'hidden');
+    });
+  }
+});

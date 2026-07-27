@@ -14,22 +14,45 @@ document.addEventListener('DOMContentLoaded', () => {
     el.textContent = new Date().getFullYear();
   });
 
-  const poster = document.querySelector('[data-video-poster]');
-  const video = document.querySelector('[data-video-embed]');
-  if (poster && video) {
-    const play = () => {
-      if (video.hasAttribute('hidden')) {
-        video.removeAttribute('hidden');
-        const icon = poster.querySelector('.play-icon');
-        if (icon) icon.setAttribute('hidden', 'hidden');
-      }
-    };
-    poster.addEventListener('click', play);
-    poster.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        play();
-      }
+  document.querySelectorAll('form[data-formsubmit]').forEach(form => {
+    const nextField = form.querySelector('input[name="_next"]');
+    if (nextField) {
+      nextField.value = new URL('merci.html', window.location.href).href;
+    }
+  });
+
+
+  const player = document.querySelector('#selected-video-player');
+  const title = document.querySelector('#selected-video-title');
+  const description = document.querySelector('#selected-video-description');
+  const externalLink = document.querySelector('#selected-video-link');
+  const videoButtons = document.querySelectorAll('.video-button[data-video-id]');
+
+  if (player && title && description && externalLink && videoButtons.length) {
+    videoButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const videoId = button.dataset.videoId;
+        const videoUrl = button.dataset.videoUrl;
+        const titleParts = (button.dataset.videoTitle || '').split('|');
+
+        player.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?autoplay=1`;
+        player.title = titleParts.join(' - ');
+        title.innerHTML = titleParts.map(part => escapeHtml(part)).join('<br>');
+        description.textContent = button.dataset.videoDescription || '';
+        externalLink.href = videoUrl;
+
+        videoButtons.forEach(item => item.classList.remove('is-selected'));
+        button.classList.add('is-selected');
+      });
     });
+  }
+
+  function escapeHtml(value) {
+    return String(value)
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#039;');
   }
 });

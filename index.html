@@ -25,13 +25,13 @@
 
     <nav class="main-nav" id="nav-principal" aria-label="Navigation principale">
       <a href="index.html" aria-current="page">Accueil</a>
-<a href="la-giettaz.html">La Giettaz</a>
-<a href="activites.html">Activités</a>
-<a href="restaurants.html">Restaurants</a>
-<a href="domaines-skiables.html">Domaines skiables</a>
-<a href="parapente.html">Parapente</a>
-<a href="a-propos.html">À propos</a>
-<a href="contact.html">Contact</a>
+      <a href="la-giettaz.html">La Giettaz</a>
+      <a href="la-clusaz.html">La Clusaz</a>
+      <a href="activites.html">Randonnées</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="domaines-skiables.html">Ski</a>
+      <a href="parapente.html">Parapente</a>
+      <a href="moniteur-ski.html">Moniteur de ski</a>
     </nav>
 
     <div class="header-actions">
@@ -135,19 +135,77 @@
   </div>
 </section>
 
+
+<section class="section" style="padding-bottom:20px">
+  <div class="container">
+    <span class="kicker">Deux pages à découvrir</span>
+    <h2>Deux nouvelles entrées<br>dans les Aravis</h2>
+    <div class="discovery-grid">
+      <a class="discovery-card" href="la-clusaz.html" style="background-image:url('assets/img/la-clusaz-card.svg')">
+        <div><h3>La Clusaz</h3><p>Village, secteurs de montagne, ski, été actif et art de vivre.</p><span class="feature-pill">Découvrir La Clusaz</span></div>
+      </a>
+      <a class="discovery-card" href="moniteur-ski.html" style="background-image:url('assets/img/moniteur-ski-card.svg')">
+        <div><h3>Moniteur de ski</h3><p>Cours particuliers, progression, familles et découverte des domaines.</p><span class="feature-pill">Voir les cours</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     <div class="video-grid">
-      <article class="panel">
-        <span class="kicker">Vidéo coup de cœur</span>
-        <h2>Rocher de la Ville<br>La Giettaz</h2>
-        <p>Un panorama exceptionnel sur la vallée et les sommets des Aravis.</p>
-        <a class="btn btn-primary" href="https://youtu.be/2DdUopC5c8U" target="_blank" rel="noopener">Regarder la vidéo</a>
+      <article class="panel video-description">
+        <span class="kicker">Vidéos coup de cœur</span>
+        <h2 id="selected-video-title">Rocher de la Ville<br>La Giettaz</h2>
+        <p id="selected-video-description">Un panorama exceptionnel sur la vallée et les sommets des Aravis.</p>
+        <a id="selected-video-link" class="btn btn-primary" href="https://youtu.be/2DdUopC5c8U" target="_blank" rel="noopener">Regarder sur YouTube</a>
       </article>
 
-      <div class="video-poster" data-video-poster tabindex="0" role="button" aria-label="Lire la vidéo">
-        <div class="play-icon"></div>
-        <iframe data-video-embed hidden src="https://www.youtube-nocookie.com/embed/2DdUopC5c8U?autoplay=1" title="Rocher de la Ville - La Giettaz" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div class="video-selector">
+        <div class="video-player">
+          <iframe
+            id="selected-video-player"
+            src="https://www.youtube-nocookie.com/embed/2DdUopC5c8U"
+            title="Rocher de la Ville - La Giettaz"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="video-buttons" aria-label="Choisir une vidéo">
+          <button
+            class="video-button is-selected"
+            type="button"
+            data-video-id="2DdUopC5c8U"
+            data-video-url="https://youtu.be/2DdUopC5c8U"
+            data-video-title="Rocher de la Ville|La Giettaz"
+            data-video-description="Un panorama exceptionnel sur la vallée et les sommets des Aravis.">
+            <span class="video-number">01</span>
+            <span><strong>Rocher de la Ville</strong><small>La Giettaz</small></span>
+          </button>
+
+          <button
+            class="video-button"
+            type="button"
+            data-video-id="z4XrgOrd42s"
+            data-video-url="https://youtu.be/z4XrgOrd42s?si=ykieCqcHIG9iMY4A"
+            data-video-title="Vol de Beauregard|Hiver"
+            data-video-description="Un vol hivernal depuis Beauregard, au-dessus des paysages enneigés des Aravis.">
+            <span class="video-number">02</span>
+            <span><strong>Vol de Beauregard</strong><small>Hiver</small></span>
+          </button>
+
+          <button
+            class="video-button"
+            type="button"
+            data-video-id="eshX_3KoVwg"
+            data-video-url="https://youtu.be/eshX_3KoVwg"
+            data-video-title="Freeride La Giettaz|Hiver"
+            data-video-description="Une séquence freeride hivernale à La Giettaz, entre neige fraîche et reliefs des Aravis.">
+            <span class="video-number">03</span>
+            <span><strong>Freeride La Giettaz</strong><small>Hiver</small></span>
+          </button>
+        </div>
       </div>
 
       <div class="side-links">
@@ -200,17 +258,21 @@
         <nav class="footer-nav">
           <a href="index.html">Accueil</a>
           <a href="la-giettaz.html">La Giettaz</a>
-          <a href="activites.html">Activités</a>
+          <a href="la-clusaz.html">La Clusaz</a>
+          <a href="activites.html">Randonnées</a>
           <a href="restaurants.html">Restaurants</a>
-          <a href="domaines-skiables.html">Domaines skiables</a>
+          <a href="domaines-skiables.html">Ski</a>
+          <a href="moniteur-ski.html">Moniteur de ski</a>
         </nav>
       </div>
       <div>
         <h3>Infos</h3>
         <nav class="footer-nav">
-          <a href="parapente.html">Parapente</a>
+          <a href="parapente.html">Aravis Parapente</a>
           <a href="a-propos.html">À propos</a>
           <a href="contact.html">Contact</a>
+          <a href="sources.html">Sources et partenaires</a>
+          <a href="confidentialite.html">Confidentialité</a>
         </nav>
       </div>
     </div>

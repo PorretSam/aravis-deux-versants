@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop stop-color="#5bc9ff"/><stop offset="1" stop-color="#e6f8ff"/>
+  </linearGradient>
+  <linearGradient id="mount" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#4678a8"/><stop offset="1" stop-color="#153a68"/>
+  </linearGradient>
+  <linearGradient id="snow" x1="0" y1="0" x2="0" y2="1">
+    <stop stop-color="#ffffff"/><stop offset="1" stop-color="#bcecff"/>
+  </linearGradient>
+</defs>
+<rect width="900" height="620" fill="url(#sky)"/>
+<circle cx="690" cy="100" r="64" fill="#ffca38"/>
+<path d="M0 365 115 273l87 62 112-118 104 90 122-164 126 143 84-75 150 159v250H0Z" fill="url(#mount)"/>
+<path d="M0 380c120-44 205 30 326 12 116-18 188-82 304-79 84 2 143 43 225 56 17 3 30 4 45 4v247H0Z" fill="url(#snow)"/>
+<g transform="translate(395 280) rotate(-8)">
+  <circle cx="60" cy="36" r="26" fill="#ffbd83"/>
+  <path d="M25 79c15-42 76-42 91 0l-4 94H29Z" fill="#ff7658"/>
+  <path d="m42 170-62 89m118-89 69 84M29 98l-78 50m157-50 78 34" stroke="#153a68" stroke-width="17" stroke-linecap="round"/>
+  <path d="M-63 270c86 17 171 14 255-9M17 291c86 17 170 14 253-9" stroke="#128dc9" stroke-width="8" stroke-linecap="round"/>
+  <rect x="44" y="58" width="54" height="33" rx="8" fill="#ffca38"/>
+</g>
+<g fill="#fff" opacity=".9">
+  <circle cx="118" cy="126" r="6"/><circle cx="212" cy="98" r="5"/><circle cx="782" cy="240" r="6"/>
+</g>
+</svg>

@@ -95,3 +95,20 @@ Les coordonnées ont été relevées sur les sites officiels :
 - guides-des-aravis.com
 
 Elles peuvent évoluer. Vérifiez-les périodiquement.
+
+
+PAGES UNIFORMISÉES
+------------------
+Les pages suivantes reprennent maintenant la même présentation que La Giettaz :
+- activites.html : Randonnées
+- domaines-skiables.html : Ski
+- restaurants.html : Restaurants
+- parapente.html : Aravis Parapente
+
+Chaque page utilise :
+- le même bandeau page-hero ;
+- une image à droite ;
+- les mêmes cartes blanches en deux colonnes ;
+- les mêmes couleurs et espacements.
+
+Les contacts, liens, vidéos et formulaires ont été conservés.

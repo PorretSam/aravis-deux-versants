@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Domaines skiables</title>
-  <meta name="description" content="Une page pour présenter La Giettaz, La Clusaz, le ski, le hors-piste et intégrer vos vidéos.">
+  <title>Ski dans les Aravis — La Giettaz et La Clusaz</title>
+  <meta name="description" content="Ski à La Giettaz et La Clusaz : domaines, vidéos hivernales, cours et conseils hors-piste.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -35,8 +35,7 @@
     </nav>
 
     <div class="header-actions">
-      <div class="weather"><span class="icon">☀️</span><span>25°C<br><small>Ensoleillé</small></span></div>
-      <a class="cta-small" href="contact.html">📍 Carte interactive</a>
+      <a class="cta-small" href="contact.html">📍 Contact et carte</a>
     </div>
   </div>
 </header>
@@ -45,24 +44,60 @@
 <section class="page-hero">
   <div class="container page-hero-grid">
     <div>
-      <span class="kicker">Domaines skiables</span>
-      <h1>Domaines skiables</h1>
-      <p>Une page pour présenter La Giettaz, La Clusaz, le ski, le hors-piste et intégrer vos vidéos.</p>
-      <a class="btn btn-primary" href="contact.html">Demander des infos</a>
+      <span class="kicker">Ski</span>
+      <h1>Ski et grands espaces</h1>
+      <p>La Giettaz, La Clusaz et leurs différents secteurs : pistes, paysages enneigés, cours de ski et vidéos hivernales.</p>
+      <a class="btn btn-primary" href="#videos-ski">Voir les vidéos</a>
     </div>
-    <div class="hero-art"><img src="assets/img/ski-card.svg" alt=""></div>
+    <div class="hero-art"><img src="assets/img/ski-card.svg" alt="Ski dans les Aravis"></div>
   </div>
 </section>
 
 <section class="section">
   <div class="container content-grid">
     <article class="content-card">
-      <h3>Structure prête</h3>
-      <p>La page reprend le même design général que l’accueil et vous pouvez y intégrer vos textes, vos photos, vos liens et vos vidéos.</p>
+      <span class="kicker">La Giettaz</span>
+      <h3>Le Plan et les Portes du Mont-Blanc</h3>
+      <p>Le départ du Plan permet d’accéder au secteur de La Giettaz, avec une ambiance de sapins et une liaison vers le domaine des Portes du Mont-Blanc.</p>
+      <p><a class="btn btn-primary" href="https://www.lesportesdumontblanc.fr/hiver/" target="_blank" rel="noopener">Informations officielles ↗</a></p>
+    </article>
+
+    <article class="content-card">
+      <span class="kicker">La Clusaz</span>
+      <h3>Balme, Beauregard et Étale</h3>
+      <p>Des secteurs complémentaires, allant des plateaux lumineux aux pentes d’altitude et aux pistes plus sportives.</p>
+      <p><a class="btn btn-primary" href="https://www.laclusaz.com/" target="_blank" rel="noopener">Informations officielles ↗</a></p>
+    </article>
+  </div>
+</section>
+
+<section class="section uniform-muted" id="videos-ski">
+  <div class="container">
+    <span class="kicker">Vidéos</span>
+    <h2>Choisir une vidéo</h2>
+
+    <div class="uniform-video">
+      <iframe id="ski-video-player" src="https://www.youtube-nocookie.com/embed/2DdUopC5c8U" title="Rocher de la Ville — La Giettaz" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="uniform-video-buttons">
+      <button class="uniform-video-button is-selected" type="button" data-ski-video="2DdUopC5c8U" data-title="Rocher de la Ville — La Giettaz">Rocher de la Ville</button>
+      <button class="uniform-video-button" type="button" data-ski-video="z4XrgOrd42s" data-title="Vol de Beauregard — hiver">Vol de Beauregard</button>
+      <button class="uniform-video-button" type="button" data-ski-video="eshX_3KoVwg" data-title="Freeride La Giettaz — hiver">Freeride La Giettaz</button>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container content-grid">
+    <article class="content-card">
+      <h3>Moniteur de ski</h3>
+      <p>Préparez une demande de cours particulier, en famille, pour débuter ou progresser.</p>
+      <p><a class="btn btn-primary" href="moniteur-ski.html">Demander un cours</a></p>
     </article>
     <article class="content-card">
-      <h3>Personnalisation facile</h3>
-      <p>Modifiez les titres et le contenu dans les fichiers HTML, et les couleurs ou espacements dans <code>assets/css/styles.css</code>.</p>
+      <h3>Hors-piste responsable</h3>
+      <p>En dehors des pistes ouvertes, consultez les conditions, disposez du matériel adapté et faites appel à un professionnel lorsque le terrain n’est pas connu.</p>
     </article>
   </div>
 </section>
@@ -76,7 +111,7 @@
           <img src="assets/img/logo-mark.svg" alt="">
           <div><strong>Aravis Deux Versants</strong><span>Votre guide au cœur des Aravis</span></div>
         </div>
-        <p>Ce code source reproduit la présentation validée : grand hero, cartes immersives, bloc vidéo et bandeau de réassurance.</p>
+        <p>Un guide indépendant pour découvrir les deux versants des Aravis.</p>
       </div>
       <div>
         <h3>Navigation</h3>
@@ -91,7 +126,7 @@
         </nav>
       </div>
       <div>
-        <h3>Infos</h3>
+        <h3>Informations</h3>
         <nav class="footer-nav">
           <a href="parapente.html">Aravis Parapente</a>
           <a href="a-propos.html">À propos</a>

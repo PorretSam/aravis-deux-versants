@@ -692,3 +692,74 @@ button,input,textarea{font:inherit}
   .provider-card{display:block}
   .provider-visual{width:100%;min-height:260px;height:260px}
 }
+
+
+/* Pages uniformisées sur la présentation de La Giettaz */
+.uniform-muted{
+  background:linear-gradient(145deg,#eefaff,#fff8e9);
+}
+.content-card .kicker{
+  margin-bottom:.35rem;
+}
+.content-card p + p{
+  margin-top:1rem;
+}
+.content-card .btn{
+  margin-top:.3rem;
+}
+.uniform-video{
+  width:min(100%,980px);
+  margin:1.5rem auto 0;
+  aspect-ratio:16/9;
+  overflow:hidden;
+  border-radius:28px;
+  background:var(--navy);
+  box-shadow:var(--shadow);
+}
+.uniform-video iframe{
+  width:100%;
+  height:100%;
+  border:0;
+}
+.uniform-video-buttons{
+  width:min(100%,980px);
+  margin:1rem auto 0;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:.8rem;
+}
+.uniform-video-button{
+  min-height:50px;
+  padding:.75rem .9rem;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:#fff;
+  color:var(--navy);
+  font-weight:800;
+  cursor:pointer;
+  box-shadow:var(--shadow-soft);
+}
+.uniform-video-button.is-selected{
+  background:var(--navy);
+  color:#fff;
+  border-color:var(--navy);
+}
+.uniform-photo-card{
+  overflow:hidden;
+  padding:0;
+}
+.uniform-photo-card>img{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+}
+.uniform-photo-card>div{
+  padding:1.45rem;
+}
+.uniform-form{
+  width:min(100%,900px);
+  margin:1.5rem auto 0;
+}
+@media(max-width:760px){
+  .uniform-video-buttons{grid-template-columns:1fr}
+}

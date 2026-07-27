@@ -55,4 +55,19 @@ document.addEventListener('DOMContentLoaded', () => {
       .replaceAll('"', '&quot;')
       .replaceAll("'", '&#039;');
   }
+  const skiPlayer = document.querySelector('#ski-video-player');
+  const skiButtons = document.querySelectorAll('[data-ski-video]');
+  if (skiPlayer && skiButtons.length) {
+    skiButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const videoId = button.dataset.skiVideo;
+        const title = button.dataset.title || 'Vidéo des Aravis';
+        skiPlayer.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?autoplay=1`;
+        skiPlayer.title = title;
+        skiButtons.forEach(item => item.classList.remove('is-selected'));
+        button.classList.add('is-selected');
+      });
+    });
+  }
+
 });

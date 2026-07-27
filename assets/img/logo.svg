@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title">
-<title id="title">Aravis Deux Versants</title>
-<rect width="180" height="180" rx="38" fill="#183c32"/>
-<circle cx="126" cy="48" r="20" fill="#f4b860"/>
-<path d="M14 125 54 65l23 34 25-49 64 75Z" fill="#f7f0df"/>
-<path d="m54 65 23 34 9-18 16 25 15-24 49 43H14Z" fill="#a8c7a0"/>
-<path d="M14 125c29-14 53-12 76 4 25 18 50 15 76-4v27H14Z" fill="#d66b4d"/>
-</svg>

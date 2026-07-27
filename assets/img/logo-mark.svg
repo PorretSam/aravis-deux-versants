@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 130" role="img" aria-label="Logo Aravis Deux Versants">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" role="img" aria-label="Logo Aravis Deux Versants">
 <defs>
-  <linearGradient id="sun" x1="0" x2="1"><stop stop-color="#ffcc34"/><stop offset="1" stop-color="#ff8b39"/></linearGradient>
-  <linearGradient id="m1" x1="0" x2="1"><stop stop-color="#0f95d7"/><stop offset="1" stop-color="#35c9c3"/></linearGradient>
+  <linearGradient id="sun" x1="0" x2="1"><stop stop-color="#ffc52d"/><stop offset="1" stop-color="#ff9a3d"/></linearGradient>
+  <linearGradient id="m" x1="0" x2="1"><stop stop-color="#127fc3"/><stop offset="1" stop-color="#3ccac7"/></linearGradient>
 </defs>
-<circle cx="36" cy="22" r="13" fill="url(#sun)"/>
-<g stroke="#f9a81f" stroke-width="3" stroke-linecap="round">
-  <path d="M36 1v8"/><path d="M36 35v8"/><path d="M15 22h8"/><path d="M49 22h8"/>
-  <path d="m21 7 5 5"/><path d="m46 32 5 5"/><path d="m21 37 5-5"/><path d="m46 12 5-5"/>
+<circle cx="33" cy="21" r="12" fill="url(#sun)"/>
+<g stroke="#f2ac1a" stroke-width="2.8" stroke-linecap="round">
+  <path d="M33 1v8"/><path d="M33 33v8"/><path d="M14 21h8"/><path d="M44 21h8"/>
+  <path d="m18 7 5 5"/><path d="m43 32 5 5"/><path d="m18 35 5-5"/><path d="m43 10 5-5"/>
 </g>
-<path d="M19 45c6-12 15-18 28-18 10 0 18 3 25 11 5-3 10-5 16-5 15 0 28 10 34 26H19Z" fill="#ffffff" opacity=".95"/>
-<path d="M16 47 43 20l17 17 15-20 27 30H16Z" fill="none" stroke="#1d8fc3" stroke-width="6" stroke-linejoin="round"/>
-<path d="M18 64c17-11 31 11 48 0 17-11 31 11 49 0" fill="none" stroke="#29c7c0" stroke-width="8" stroke-linecap="round"/>
+<path d="M12 49c6-12 14-18 26-18 9 0 17 3 23 10 5-3 10-5 16-5 13 0 26 10 32 25H12Z" fill="#ffffff"/>
+<path d="M12 51 36 27l17 17 15-21 28 31H12Z" fill="none" stroke="#1790c8" stroke-width="5.8" stroke-linejoin="round"/>
+<path d="M15 66c17-10 31 10 47 0s31 10 48 0" fill="none" stroke="#29c6c0" stroke-width="8" stroke-linecap="round"/>
 </svg>

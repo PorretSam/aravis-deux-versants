@@ -1,1 +1,0 @@
-Les illustrations fonctionnent immédiatement. Pour utiliser vos photos, remplacez les fichiers dans assets/img en gardant les mêmes noms, ou changez les chemins dans les pages HTML. Formats conseillés : WebP ou JPG, 1800 px de large minimum pour le visuel d’accueil.

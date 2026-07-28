@@ -804,3 +804,27 @@ button,input,textarea{font:inherit}
   height:100%;
   object-fit:contain;
 }
+/* Agrandissement du logo principal */
+
+.brand .site-logo{
+  width:164px;
+  height:auto;
+  max-width:none;
+  flex:0 0 164px;
+  object-fit:contain;
+}
+
+.header-inner{
+  min-height:130px;
+}
+
+@media(max-width:780px){
+  .brand .site-logo{
+    width:115px;
+    flex-basis:115px;
+  }
+
+  .header-inner{
+    min-height:105px;
+  }
+}

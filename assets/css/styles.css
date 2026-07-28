@@ -29,7 +29,7 @@ button,input,textarea{font:inherit}
 .site-header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:100}
 .header-inner{min-height:92px;display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .brand{display:flex;align-items:center;gap:14px;min-width:max-content}
-.brand img{width:82px;flex:0 0 auto}
+.brand img{width:164px;flex:0 0 auto}
 .brand-text{line-height:.92}
 .brand-text strong{display:block;font-size:1.95rem;font-weight:900;letter-spacing:-.04em;color:#123b63}
 .brand-text b{display:block;font-size:1.15rem;letter-spacing:.08em;color:#26c0cd}

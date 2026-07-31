@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://porretsam.github.io/aravis-deux-versants/sitemap.xml
